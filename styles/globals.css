@@ -902,6 +902,7 @@ a {
     position: absolute;
     top: 60%;
     left: 35%;
+    z-index: 2 !important;
   }
   .desc {
     display: none;
