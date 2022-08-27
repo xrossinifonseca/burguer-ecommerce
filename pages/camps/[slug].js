@@ -60,7 +60,7 @@ const ProductDetails = ({ camp, camps, products }) => {
             >
               Adicionar a sacola
             </button>
-            <button type="button" className="buy-now" onClick="">
+            <button type="button" className="buy-now">
               Comprar agora
             </button>
           </div>

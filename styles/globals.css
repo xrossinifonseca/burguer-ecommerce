@@ -724,6 +724,9 @@ a {
 }
 
 @media screen and (max-width: 800px) {
+  .logo {
+    display: none;
+  }
   .btn-menu {
     width: 25%;
     left: 38%;
@@ -735,7 +738,7 @@ a {
   .hero-banner-image {
     width: 50%;
     height: auto;
-    /* top: 20%; */
+    top: 20%;
     left: 40%;
   }
   .footer-banner-container {

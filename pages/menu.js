@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { client, urlFor } from "../lib/client";
 import { useStateContext } from "../context/StateContext";
 
-import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
-import { FooterBanner, HeroBanner } from "../components";
+// import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
+// import { FooterBanner, HeroBanner } from "../components";
 
 export default function Menu({ products, camps }) {
   const { qty, decQty, incQty, onAdd } = useStateContext();
@@ -35,7 +35,7 @@ export default function Menu({ products, camps }) {
         <div>
           {products?.map((product) => (
             //   <Product key={product._id} product={product} />
-            <div className="menu-container">
+            <div key={product._id} className="menu-container">
               <img
                 src={urlFor(product.image && product.image[0])}
                 className="product-image"
@@ -67,7 +67,7 @@ export default function Menu({ products, camps }) {
         <div>
           {camps?.map((camp) => (
             //   <Product key={product._id} product={product} />
-            <div className="menu-container">
+            <div key={camp._id} className="menu-container">
               <img
                 src={urlFor(camp.image && camp.image[0])}
                 className="product-image"
